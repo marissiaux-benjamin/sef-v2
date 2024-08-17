@@ -1,0 +1,11 @@
+*
+!wp-content/
+wp-content/*
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/sef-aout
+!wp-content/themes/sef-aout/*
+/wp-content/themes/sef-aout/ressources/*
+!/wp-content/themes/sef-aout/ressources/scss/
+!/wp-content/themes/sef-aout/ressources/scss/accueil
+!/wp-content/themes/sef-aout/ressources/scss/*

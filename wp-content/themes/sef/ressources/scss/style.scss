@@ -1,0 +1,8 @@
+/* commandes a faire lors du lancement de php storm:
+
+1. cd wp-content/themes/sef/ressources/scss
+2. sass --watch style.scss:../css/style.css
+*/
+@import "variables";
+@import "header";
+@import "accueil";

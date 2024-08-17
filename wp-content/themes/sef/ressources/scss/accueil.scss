@@ -1,0 +1,112 @@
+html {
+  background-color: #EFF5F5;
+}
+
+section {
+  color: $dark-blue;
+}
+
+.wrapper {
+  padding-left: $wrapper;
+  padding-right: $wrapper;
+}
+
+.mot-orange {
+  color: $orange;
+}
+
+.intro {
+  height: 88vh;
+  display: flex;
+  padding-top: 5em;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-family: "Niveau Grotesk medium", sans-serif;
+    font-size: $titre-de-page;
+    margin-bottom: .3em;
+  }
+
+  p {
+    font-family: "Niveau Grotesk light", sans-serif;
+    font-size: 1.4375em;
+    margin-bottom: 3em;
+  }
+
+  .btn-bleu, .btn-orange {
+    display: inline-block;
+    color: $white;
+    font-family: Roca, serif;
+    padding: .5em 2em;
+    border-radius: 3em;
+    font-size: 1.25em;
+    text-decoration: none;
+    transition: transform 98ms linear;
+  }
+
+  .btn-bleu:hover, .btn-orange:hover {
+    transform: scale(1.1);
+  }
+
+  .btn-bleu {
+    background-color: $dark-blue;
+    margin-right: 1.875em;
+  }
+
+  .btn-orange {
+    background-color: $orange;
+  }
+
+  .img-container {
+    position: relative;
+
+    &__contenu {
+      transform: translateX(-10%);
+      width: fit-content;
+      clip-path: path("M65.55,69.81C180-.75,142.46-22.11,223.07,25.61c80.6,47.72,153.73,115.38,110.49,214.24-43.24,98.85-137.64,205.55-234.49,150.74C2.22,335.76-48.91,140.36,65.55,69.81Z");
+    }
+
+    &__fond {
+      z-index: -1;
+      position: absolute;
+      left: -15%;
+      top: -2%;
+    }
+  }
+}
+
+.services {
+
+  &__flex{
+    display: flex;
+  }
+
+  h1 {
+    font-family: "Niveau Grotesk medium", sans-serif;
+    font-size: $titre-secondaire;
+    margin-bottom: 1em;
+  }
+
+  .img-service {
+    position: relative;
+    width: 45em;
+
+    &__contenu {
+      transform: scale(.8) translateX(2em);
+      width: fit-content;
+      clip-path: path("M194.38,12.81s103.14-41.47,152.65,24.83c49.51,66.3,169.37,213.29,51.69,335.07s-155.32,136.66-303.6,134.42C-10.5,505.53-5.69,333.97,5.82,235.41c5.07-43.44,24.61-83.91,55.41-114.96C101.33,80.04,158.97,26.32,194.38,12.81Z");
+    }
+
+    &__fond {
+      width: 30em;
+      z-index: -1;
+      position: absolute;
+      top: 8%;
+      left: 0;
+    }
+  }
+
+
+}
+

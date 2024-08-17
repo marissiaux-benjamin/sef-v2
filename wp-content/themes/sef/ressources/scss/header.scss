@@ -1,0 +1,209 @@
+.hidden-title {
+  overflow: hidden !important;
+  font-size: 0 !important;
+  text-indent: -100000px !important;
+  position: absolute;
+}
+
+.header {
+  background-color: #102C57;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6em;
+
+  &__icon {
+    padding-left: 1.5em;
+    padding-top: .8em;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: inline;
+    z-index: 9999999;
+
+    &__btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 50px;
+      cursor: pointer;
+      transition: .4s;
+      z-index: 2;
+    }
+
+    &__icon {
+      display: block;
+      position: relative;
+      background: white;
+      width: 85%;
+      height: 5px;
+      transition: .4s;
+      border-radius: 30px;
+
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: white;
+        height: 5px;
+        transition: .4s;
+        border-radius: 30px;
+      }
+
+      &::after {
+        width: 100%;
+        top: 10px;
+      }
+
+      &::before {
+        width: 100%;
+        top: -10px;
+      }
+    }
+
+    &__container {
+      position: fixed;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50px;
+      right: 0;
+      z-index: 1;
+      height: 0;
+      width: 0;
+      opacity: 1;
+      transition: .5s;
+      transition-delay: .2s;
+      overflow: hidden;
+    }
+
+    &__item {
+      font-family: "Niveau Grotesk medium", sans-serif;
+      right: 0;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-btn {
+      font-family: Roca, serif;
+      font-size: 1em;
+      margin-left: 2em;
+      background-color: #EB6440;
+      top: 50%;
+      padding: .5em 2em;
+      border-radius: 4em;
+    }
+
+    &__checkbox {
+      display: none;
+
+      &:checked ~ {
+        .mobile-menu {
+          &__container {
+            background-color: #102C57;
+            height: 100%;
+            width: 50%;
+            transition-delay: 0s;
+            top: 0;
+          }
+
+          &__btn {
+            position: fixed;
+            right: 2%;
+
+            .mobile-menu__icon {
+              background: transparent;
+
+              &::before,
+              &::after {
+                top: 0;
+                left: -10%;
+                background-color: white;
+                width: 120%;
+              }
+
+              &::after {
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+              }
+
+              &::before {
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+
+    .mobile-menu {
+      &__container {
+        position: initial;
+        height: initial;
+        width: initial;
+      }
+
+      &__link {
+        font-size: 1em;
+        color: white;
+        position: relative;
+      }
+
+      &__link:after {
+        position: absolute;
+        top: 110%;
+        left: 10%;
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: white;
+        border-radius: .1em;
+        transition: .3s ease-in;
+      }
+
+      &__link:hover::after {
+        width: 80%;
+      }
+
+      &__list {
+        display: flex;
+        overflow: initial;
+        height: 100%;
+      }
+
+      &__item {
+        font-size: 1.25em;
+        padding: .5em .5em;
+      }
+
+      &__btn {
+        display: none;
+      }
+
+    }
+  }
+}
