@@ -49,12 +49,66 @@ get_header();
                 <img src="http://sef-aout.test/wp-content/uploads/2024/08/forme-img-orange-1.svg"
                      alt="fond de couleur orange" class="img-service__fond">
             </div>
-            <article class="services__text">
+            <div class="text-container">
+                <article class="text-container__services__text">
+                    <h2>
+                        <?= get_field("service-1", 12) ?>
+                    </h2>
+                    <p>
+                        <?= get_field("texte-service-1", 12) ?>
+                    </p>
+                    <a href="<?= get_field("lien-service-2", 12) ?>" title="Aller sur la page a propos">En savoir plus
+                        sur les maisons</a>
+                </article>
+                <article class="text-container__services__text">
+                    <h2>
+                        <?= get_field("service-2", 12) ?>
+                    </h2>
+                    <p>
+                        <?= get_field("texte-service-2", 12) ?>
+                    </p>
+                    <a href="" title="Aller sur la page des magasins">Où sont les magasins ?</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="news wrapper">
+        <h1>
+            Les <span class="mot-orange">news</span> les plus <span class="mot-orange">récentes</span>
+        </h1>
+        <div class="cartes-container">
+            <article class="cartes-container__carte">
                 <h2>
-                    <?= get_field("service-1", 12) ?>
+                    <?= get_field("carte-titre", 12) ?>
                 </h2>
                 <p>
-                    <?= get_field("texte-service-1", 12) ?>
+                    <?= get_field("date", 12) ?>
+                </p>
+                <p>
+                    <?= get_field("carte-texte", 12) ?>
+                </p>
+            </article>
+
+            <article class="cartes-container__carte">
+                <h2>
+                    <?= get_field("carte-titre-2", 12) ?>
+                </h2>
+                <p>
+                    <?= get_field("date-2", 12) ?>
+                </p>
+                <p>
+                    <?= get_field("carte-texte-2", 12) ?>
+                </p>
+            </article>
+            <article class="cartes-container__carte">
+                <h2>
+                    <?= get_field("carte-titre-3", 12) ?>
+                </h2>
+                <p>
+                    <?= get_field("date-3", 12) ?>
+                </p>
+                <p>
+                    <?= get_field("carte-texte-3", 12) ?>
                 </p>
             </article>
         </div>

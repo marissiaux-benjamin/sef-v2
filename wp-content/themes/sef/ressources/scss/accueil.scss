@@ -77,8 +77,9 @@ section {
 }
 
 .services {
+  padding-bottom: 15em;
 
-  &__flex{
+  &__flex {
     display: flex;
   }
 
@@ -93,9 +94,9 @@ section {
     width: 45em;
 
     &__contenu {
-      transform: scale(.8) translateX(2em);
+      transform: scale(.9) translate(5em, 2em);
       width: fit-content;
-      clip-path: path("M194.38,12.81s103.14-41.47,152.65,24.83c49.51,66.3,169.37,213.29,51.69,335.07s-155.32,136.66-303.6,134.42C-10.5,505.53-5.69,333.97,5.82,235.41c5.07-43.44,24.61-83.91,55.41-114.96C101.33,80.04,158.97,26.32,194.38,12.81Z");
+      clip-path: path("M164.27,10.81s86.73-34.59,128.07,19.98c41.46,92.48,57.44,240.2,10.73,294.19-99.22,100.95-99.34,95.64-223.81,94.29C-9.42,418.32-4.79,276.65,5.21,195.24c4.41-35.88,20.95-69.36,46.91-95.1C85.92,66.63,134.49,22.09,164.27,10.81Z");
     }
 
     &__fond {
@@ -104,6 +105,80 @@ section {
       position: absolute;
       top: 8%;
       left: 0;
+    }
+  }
+
+  .text-container {
+    align-content: center;
+
+    &__services__text {
+      &:first-of-type {
+        margin-bottom: 6em;
+      }
+
+      h2 {
+        font-family: "Niveau Grotesk medium", sans-serif;
+        font-size: 2.5em;
+        margin-bottom: .6em;
+      }
+
+      p {
+        font-family: "Niveau Grotesk light", sans-serif;
+        font-size: $text-size;
+        max-width: 40em;
+        margin-bottom: .56em;
+      }
+
+      a {
+        font-family: "Niveau Grotesk medium", sans-serif;
+        font-size: 1.4375em;
+        color: $dark-blue;
+        transition: .2s ease-in-out;
+      }
+
+      a:hover {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.news {
+  h1 {
+    font-family: "Niveau Grotesk medium", sans-serif;
+    font-size: $titre-secondaire;
+    margin-bottom: 1em;
+  }
+
+  .cartes-container {
+    display: flex;
+    column-gap: 1em;
+    row-gap: 1em;
+
+    &__carte {
+      border-radius: 1em;
+      padding: 2em;
+      width: 25%;
+      background-color: $carte-couleur;
+
+      h2 {
+        font-family: "Niveau Grotesk medium", sans-serif;
+        font-size: 1.875em;
+        margin-bottom: .5em;
+      }
+
+      p:first-of-type {
+        font-family: "Niveau Grotesk medium", sans-serif;
+        font-size: $text-size;
+        color: $orange;
+        margin-bottom: 2em;
+      }
+
+      p:last-of-type {
+        font-family: "Niveau Grotesk light", sans-serif;
+        font-size: $text-size;
+        line-height: 1.3em;
+      }
     }
   }
 }
