@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+  background-color: $dark-blue;
+  padding-top: 3.625em;
+  padding-bottom: 4em;
+
+  h1 {
+    color: white;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  li {
+    font-family: "Niveau Grotesk light", sans-serif;
+    margin-bottom: 1em;
+    color: white;
+  }
+
+
+  &__reseaux {
+    a {
+      display: inline-block;
+      width: 50px;
+      font-size: 3em;
+      color: white;
+      text-indent: 100%;
+      overflow: hidden;
+      background-image: url("http://sef-aout.test/wp-content/uploads/2024/08/logo-facebook.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__coordonnees, &__soutien, &__nav {
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: "Niveau Grotesk light", sans-serif;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

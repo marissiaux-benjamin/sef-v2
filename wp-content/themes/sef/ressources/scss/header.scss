@@ -80,16 +80,15 @@
       text-align: center;
       display: flex;
       align-items: center;
-      justify-content: center;
       top: 50px;
       right: 0;
       z-index: 1;
-      height: 0;
       width: 0;
       opacity: 1;
       transition: .5s;
       transition-delay: .2s;
       overflow: hidden;
+      height: 100%;
     }
 
     &__item {
@@ -105,7 +104,6 @@
     .nav-btn {
       font-family: Roca, serif;
       font-size: 1em;
-      margin-left: 2em;
       background-color: #EB6440;
       top: 50%;
       padding: .5em 2em;
@@ -123,7 +121,11 @@
             width: 50%;
             transition-delay: 0s;
             top: 0;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 2em;
           }
+
 
           &__btn {
             position: fixed;
@@ -157,9 +159,8 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .header {
-
     .mobile-menu {
       &__container {
         position: initial;
@@ -179,7 +180,7 @@
         left: 10%;
         content: "";
         width: 0;
-        height: 3px;
+        height: 2px;
         background-color: white;
         border-radius: .1em;
         transition: .3s ease-in;
@@ -193,6 +194,7 @@
         display: flex;
         overflow: initial;
         height: 100%;
+        margin-right: 2em;
       }
 
       &__item {

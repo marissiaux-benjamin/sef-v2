@@ -18,6 +18,7 @@ section {
 .intro {
   height: 88vh;
   display: flex;
+  column-gap: 3.5em;
   padding-top: 5em;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +33,7 @@ section {
     font-family: "Niveau Grotesk light", sans-serif;
     font-size: 1.4375em;
     margin-bottom: 3em;
+    width: 70%;
   }
 
   .btn-bleu, .btn-orange {
@@ -81,12 +83,13 @@ section {
 
   &__flex {
     display: flex;
+    column-gap: 2em;
   }
 
   h1 {
     font-family: "Niveau Grotesk medium", sans-serif;
     font-size: $titre-secondaire;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
 
   .img-service {
@@ -100,7 +103,7 @@ section {
     }
 
     &__fond {
-      width: 30em;
+      width: 28em;
       z-index: -1;
       position: absolute;
       top: 8%;
@@ -113,7 +116,7 @@ section {
 
     &__services__text {
       &:first-of-type {
-        margin-bottom: 6em;
+        margin-bottom: 3em;
       }
 
       h2 {
@@ -144,6 +147,8 @@ section {
 }
 
 .news {
+  margin-bottom: 9.6875em;
+
   h1 {
     font-family: "Niveau Grotesk medium", sans-serif;
     font-size: $titre-secondaire;
@@ -151,14 +156,17 @@ section {
   }
 
   .cartes-container {
-    display: flex;
-    column-gap: 1em;
-    row-gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+    row-gap: 4%;
+    grid-template-areas:
+            "carte1 carte2 don"
+            "carte3 carte4 don";
 
     &__carte {
       border-radius: 1em;
       padding: 2em;
-      width: 25%;
       background-color: $carte-couleur;
 
       h2 {
@@ -180,6 +188,135 @@ section {
         line-height: 1.3em;
       }
     }
+
+    .carte1 {
+      grid-area: carte1;
+    }
+
+    .carte2 {
+      grid-area: carte2;
+    }
+
+    .carte3 {
+      grid-area: carte3;
+    }
+
+    &__don {
+      padding: 4em 1.5em 3em 1.5em;
+      border-radius: 1em;
+      grid-area: don;
+      background-color: $dark-blue;
+      text-align: center;
+
+      img {
+        width: 50%;
+        margin-bottom: 2em;
+      }
+
+      h2 {
+        font-family: "Niveau Grotesk medium", sans-serif;
+        font-size: 3em;
+        color: white;
+        margin-bottom: 1em;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: Roca, serif;
+        color: white;
+        padding: 1em 2em;
+        background-color: $orange;
+        border-radius: 3em;
+        transition: 98ms ease-in-out;
+      }
+
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }
 
+.benevolat {
+  text-align: center;
+  margin-bottom: 5em;
+
+  h1 {
+    font-size: $titre-de-page;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    margin-bottom: .625em;
+  }
+
+  a {
+    display: inline-block;
+    font-family: Roca, Rockwell, serif;
+    font-size: 1.875em;
+    padding: .5em 2em;
+    background-color: $orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 3em;
+    transition: 98ms ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+  }
+}
+
+
+@media (max-width: 1130px) {
+  .intro {
+    flex-wrap: wrap;
+    height: initial;
+    padding-top: 10em;
+
+    p {
+      margin-bottom: 2em;
+    }
+
+    div:first-of-type {
+      margin-bottom: 4em;
+    }
+
+    .img-container {
+      margin: 0 auto;
+    }
+  }
+
+  .services {
+    padding-bottom: 5em;
+
+    &__flex {
+      flex-wrap: wrap;
+    }
+
+    .img-service {
+      text-align: center;
+      order: 1;
+      margin: 0 auto;
+
+      &__fond {
+        left: 27%;
+      }
+    }
+  }
+
+  .news {
+    .cartes-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+              "carte1 carte2"
+              "carte3 carte4"
+              "don don";
+
+      &__don {
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
