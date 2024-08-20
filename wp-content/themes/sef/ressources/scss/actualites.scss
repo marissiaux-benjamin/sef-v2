@@ -1,0 +1,51 @@
+.img-actu-container {
+  position: relative;
+  text-align: center;
+
+  &__contenu-actu {
+    transform: translate(3.5em, 3em);
+    width: fit-content;
+    clip-path: path("M62.49,277.59S-12.4,214.05,1.79,166.4c14.18-47.66,7.94-83.97,45.95-105.52,38.01-21.56,155.45-104.96,238.85-30.64,83.4,74.32,99.85,118.01,82.83,151.48-17.02,33.47-22.13,115.17-62.41,120.84-40.28,5.67-188.92-1.7-244.52-24.96Z");
+  }
+
+  &__fond {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.actu-container {
+  h1 {
+    font-size: $titre-secondaire;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  &__activites {
+    display: flex;
+    column-gap: 3em;
+    margin-bottom: 8em;
+
+    &__img {
+      border-radius: 1em;
+    }
+
+    &__texte {
+      h2 {
+        font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+      }
+
+      p {
+        font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
+        font-size: $text-size;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+

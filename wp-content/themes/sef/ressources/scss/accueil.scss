@@ -1,5 +1,6 @@
 html {
   background-color: #EFF5F5;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -268,6 +269,10 @@ section {
 
 
 @media (max-width: 1130px) {
+  .wrapper{
+    padding-left: $wrapper-mediaquery;
+    padding-right: $wrapper-mediaquery;
+  }
   .intro {
     flex-wrap: wrap;
     height: initial;

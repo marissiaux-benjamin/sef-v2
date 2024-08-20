@@ -19,7 +19,7 @@
             SEF
         </a>
     </h1>
-    <nav class="mobile-menu reveal">
+    <nav class="mobile-menu">
         <h2 class="hidden-title">navigation principale</h2>
         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
         <label for="checkbox" class="mobile-menu__btn">
@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/A propos/" title="Aller vers la page a propos"
+                    <a href="http://sef-aout.test/actualites/" title="Aller vers la page a propos"
                        class="mobile-menu__link">
                         Actualités
                     </a>
