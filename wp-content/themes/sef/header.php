@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/Projets/" title="Aller vers la page projets"
+                    <a href="http://sef-aout.test/a-propos/" title="Aller vers la page projets"
                        class="mobile-menu__link">
                         A propos
                     </a>

@@ -1,0 +1,181 @@
+.intro {
+
+  .but-premier {
+    font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+    margin-bottom: 0;
+    line-height: 1.3em;
+  }
+
+  .img-about-container {
+    position: relative;
+    text-align: center;
+    margin-right: 10%;
+
+    &__contenu-about {
+      transform: scale(.8) translateY(1em);
+      width: fit-content;
+      clip-path: circle(10em);
+    }
+
+    &__fond {
+      z-index: -1;
+      position: absolute;
+      top: 20%;
+      right: 0;
+    }
+  }
+}
+
+.residences {
+  margin-bottom: 10em;
+
+  h1 {
+    font-size: 4em;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  .maisons-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+
+    &__maison {
+      text-align: center;
+
+      h2 {
+        font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+        font-size: 2.5em;
+        margin-bottom: .5em;
+      }
+
+      img {
+        border-radius: 1.5em;
+        width: 30em;
+        margin-bottom: 2.5em;
+      }
+
+      ul {
+        width: fit-content;
+        list-style: "-";
+        margin-left: 15%;
+        font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
+        font-size: $text-size;
+      }
+    }
+
+    &__ligne-verticale {
+      content: "";
+      width: 5px;
+      background-color: $dark-blue;
+      border-radius: 1em;
+    }
+  }
+}
+
+.histoire {
+  h1 {
+    font-size: 4em;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  &__contenu {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3em;
+
+    &__texte {
+      flex: 1.5;
+      margin-top: 2em;
+
+      p {
+        line-height: 1.3em;
+        font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
+        font-size: $text-size;
+      }
+
+      p:first-of-type {
+        margin-bottom: 1em;
+      }
+    }
+
+    .img-histoire-container {
+      flex: 1;
+      position: relative;
+
+      &__photo-famille {
+        transform: translate(6em, 4em);
+        width: 30em;
+        clip-path: path("M93.12,374.37c-30.07-12.41-52.5-38.25-60.68-69.73-6.61-25.42-16.14-56.66-28.25-82.02C-5.94,170.42-5.16,64.48,94.56,34.87,194.27,5.27,195.83-12.65,241.79,10.72s109.84,63.88,155.03,148.02c45.18,84.13,15.58,269.54-98.16,267.21-71.49-1.47-154.07-30.33-205.54-51.57Z");
+      }
+
+      &__fond {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.dons {
+  margin-bottom: 7em;
+
+  h1 {
+    font-size: 4em;
+    font-family: "Niveau Grotesk medium", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  .cartes-dons {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3em;
+
+    &__materiel {
+      color: white;
+      flex: 1;
+      background-color: $dark-blue;
+    }
+
+    &__financier {
+      background-color: $carte-couleur;
+      flex: 1;
+        strong {
+          font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+        }
+      p:first-of-type{
+        margin-bottom: 1em;
+      }
+
+      p:nth-of-type(2){
+        margin-bottom: 3em;
+      }
+
+      p:nth-of-type(3){
+        margin-bottom: .5em;
+      }
+    }
+
+    &__materiel, &__financier {
+      padding: 5em 3em;
+      border-radius: 1.5em;
+
+      h2 {
+        font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+      }
+      p{
+        font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
+        font-size: $text-size;
+        line-height: 1.3em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+
+
