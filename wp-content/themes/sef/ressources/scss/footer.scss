@@ -46,3 +46,41 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-areas:
+            "section1 section2"
+            "section3 section4";
+    row-gap: 4em;
+    padding-bottom: 1.5em;
+
+
+    &__reseaux {
+      grid-area: section1;
+    }
+
+    &__coordonnees {
+      grid-area: section2;
+    }
+
+    &__soutien {
+      grid-area: section3;
+    }
+
+    &__nav {
+      grid-area: section4;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: inherit;
+
+    section:first-of-type, section:nth-of-type(2), section:nth-of-type(3) {
+      margin-bottom: 3em;
+    }
+  }
+}

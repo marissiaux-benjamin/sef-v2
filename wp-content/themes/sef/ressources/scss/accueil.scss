@@ -268,16 +268,38 @@ section {
   }
 }
 
-
 @media (max-width: 1130px) {
-  .wrapper{
+  .services {
+    padding-bottom: 5em;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+
+    .img-service {
+      margin: 0 auto;
+
+      &__contenu {
+        transform: scale(.8) translate(3em, 1em);
+      }
+
+      &__fond {
+        width: initial;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .wrapper {
     padding-left: $wrapper-mediaquery;
     padding-right: $wrapper-mediaquery;
   }
+
   .intro {
-    flex-wrap: wrap;
-    height: initial;
-    padding-top: 10em;
+    padding-top: 4.5em;
 
     p {
       margin-bottom: 2em;
@@ -292,24 +314,6 @@ section {
     }
   }
 
-  .services {
-    padding-bottom: 5em;
-
-    &__flex {
-      flex-wrap: wrap;
-    }
-
-    .img-service {
-      text-align: center;
-      order: 1;
-      margin: 0 auto;
-
-      &__fond {
-        left: 27%;
-      }
-    }
-  }
-
   .news {
     .cartes-container {
       grid-template-columns: repeat(2, 1fr);
@@ -320,9 +324,116 @@ section {
 
       &__don {
         img {
-          width: 20%;
+          display: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+
+  .intro {
+    p {
+      width: 90%;
+    }
+
+    a:first-of-type {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .btn-orange, .btn-bleu {
+    padding: .7em 2em;
+  }
+  .intro {
+    padding-top: 10em;
+
+
+  }
+  .services {
+    .img-service {
+      &__contenu {
+        transform: scale(0.7) translate(1em, -1.5em);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    flex-wrap: wrap;
+
+    .img-container {
+      display: none;
+    }
+  }
+  .services {
+    padding-bottom: 10em;
+
+    &__flex {
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      margin-bottom: .5em;
+    }
+
+    .img-service {
+      display: none;
+      width: fit-content;
+      height: 25em;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .news {
+    .cartes-container {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 2em;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .intro {
+    padding-top: 7em;
+    height: 70vh;
+
+    h1 {
+      font-size: 4.5em;
+    }
+
+    div:first-of-type {
+      margin-bottom: 2em;
+    }
+  }
+  .services {
+    padding-bottom: 6em;
+
+    h1 {
+      font-size: 3.5em;
+    }
+
+    .text-container__services__text {
+      h2 {
+        font-size: 2em;
+      }
+    }
+  }
+  .news {
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: .5em;
+    }
+  }
+  .benevolat {
+    h1 {
+      font-size: 4.5em;
     }
   }
 }
