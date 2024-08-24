@@ -35,7 +35,7 @@ get_header()
                  class="img-about-container__fond">
         </div>
         <div>
-            <h1>Quoi de <span class="mot-orange">neuf</span> au SEF&nbsp;?</h1>
+            <h1>Le <span class="mot-orange">but</span> du SEF</h1>
             <p class="but-premier">
                 <?= get_field("intro-p-1", 50) ?>
             </p>

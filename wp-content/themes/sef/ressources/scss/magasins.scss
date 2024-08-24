@@ -1,0 +1,97 @@
+.img-magasins-container {
+  transform: translateY(-3em);
+  position: relative;
+
+  &__contenu {
+    transform: translate(4em, 2em);
+    clip-path: path("M17.09,154.62s-56.99,126.78,37.14,153.03c94.13,26.25,215,17.29,246.45,0,31.45-17.29,88.44-76.84,86.51-142.15C385.27,100.2,271.3,3.51,240.56.31,209.83-2.89,65.76,16.96,17.09,154.62Z");
+  }
+
+  &__fond {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.magasins {
+
+  h1 {
+    font-size: 4em;
+    font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+    margin-bottom: 1em;
+  }
+
+  &__cartes-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+
+    img {
+      border-radius: 1.5em 1.5em 0 0;
+      width: 100%;
+    }
+
+    &__carte {
+      border-radius: 1.5em;
+      background-color: $carte-couleur;
+      font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
+      margin-bottom: 5em;
+
+      div {
+        padding: 2em;
+
+        h2, h3 {
+          font-size: 2.5em;
+          margin-bottom: .5em;
+        }
+
+        p {
+          font-size: $text-size;
+        }
+
+        p:first-of-type {
+          margin-bottom: .8em;
+        }
+
+        p:nth-of-type(2) {
+          margin-bottom: 3em;
+
+          a {
+            color: $dark-blue;
+            text-decoration: none;
+            transition: .2s ease-in-out;
+            background-image: url("http://sef-aout.test/wp-content/uploads/2024/08/logo-phone.svg");
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 1.5em;
+          }
+
+          a:hover {
+            color: $orange;
+          }
+        }
+
+
+        h2, h3, p:first-of-type, p a {
+          font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+        }
+
+        ul {
+          font-size: $text-size;
+
+          li {
+            margin-bottom: .5em;
+
+            .gras {
+              font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}

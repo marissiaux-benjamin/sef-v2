@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href=" http://sef-aout.test/magasins/" title="Aller vers la page contact"
+                    <a href="http://sef-aout.test/magasins/" title="Aller vers la page contact"
                        class="mobile-menu__link">
                         Magasins
                     </a>

@@ -19,7 +19,7 @@ get_header();
             <p>
                 <?= get_field("intro", 12) ?>
             </p>
-            <a href="#" class="btn-bleu">Nous d&eacute;couvrir</a>
+            <a href="http://sef-aout.test/actualites/" class="btn-bleu">Nous d&eacute;couvrir</a>
             <a href="#" class="btn-orange">Contacter</a>
 
         </div>
