@@ -110,7 +110,7 @@ get_header()
             </div>
         </div>
     </section>
-    <section class="dons wrapper">
+    <section class="dons wrapper" id="dons">
         <h1>
             A propos des <span class="mot-orange">dons</span>
         </h1>
@@ -120,11 +120,12 @@ get_header()
                     Dons matériels
                 </h2>
                 <p>
-                    Nous ne prenons pas que les dons financiers, vous avez aussi l’opportunité de venir déposer vos
-                    meubles au dépôt, vêtements à la friperie ou encore vos livres dans notre bouquinerie.
-                    Vous pouvez donc vous rendre à ces endroits pour faire vos dons.
+                    <?= get_field('text-materiel-1', 50) ?>
                 </p>
-                <a href="" class="btn-orange">Voir les magasins</a>
+                <p>
+                    <?= get_field('text-materiel-2', 50) ?>
+                </p>
+                <a href="http://sef-aout.test/magasins/#magasins" class="btn-orange">Voir les magasins</a>
             </article>
             <article class="cartes-dons__financier">
                 <h2>
@@ -141,8 +142,7 @@ get_header()
                     Les dons à partir de <span class="mot-orange">40&nbsp;€</span> par an sont <span class="mot-orange">exonérés fiscalement</span>.
                 </p>
                 <p>
-                    Votre soutien sert à encourager différentes les activités et services proposés par le SEF aux
-                    personnes qui en ont besoin.
+                    <?= get_field('texte-don-financier', 50) ?>
                 </p>
             </article>
         </div>

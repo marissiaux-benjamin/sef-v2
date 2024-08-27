@@ -44,7 +44,7 @@ get_header()
             </p>
         </div>
     </section>
-    <section class="magasins wrapper">
+    <section class="magasins wrapper" id="magasins">
         <h1>
             Nos <span class="mot-orange">commerces</span>
         </h1>

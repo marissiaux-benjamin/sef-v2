@@ -52,13 +52,13 @@
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href=" http://sef-aout.test/contact/" title="Aller vers la page contact"
+                    <a href="http://sef-aout.test/2024/08/25/contact/" title="Aller vers la page contact"
                        class="mobile-menu__link">
                         Contact
                     </a>
                 </li>
             </ul>
-            <a href=" http://portfolio-v2.test/contact/" title="Aller vers la page contact"
+            <a href="http://sef-aout.test/a-propos/#dons" title="Aller vers la page contact"
                class="mobile-menu__link nav-btn">
                 Donation
             </a>
