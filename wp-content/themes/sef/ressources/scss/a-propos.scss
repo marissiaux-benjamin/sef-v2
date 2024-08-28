@@ -1,4 +1,4 @@
-.intro-actu {
+.intro {
 
   .but-premier {
     font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
@@ -55,10 +55,11 @@
         margin-bottom: 2.5em;
       }
 
+
       ul {
         width: fit-content;
         list-style: "-";
-        margin-left: 15%;
+        margin: 0 auto;
         font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
         font-size: $text-size;
       }
@@ -74,6 +75,8 @@
 }
 
 .histoire {
+  margin-bottom: 10em;
+
   h1 {
     font-size: 4em;
     font-family: "Niveau Grotesk medium", sans-serif;
@@ -83,7 +86,7 @@
   &__contenu {
     display: flex;
     justify-content: space-between;
-    column-gap: 3em;
+    column-gap: 3.5em;
 
     &__texte {
       flex: 1.5;
@@ -103,18 +106,23 @@
     .img-histoire-container {
       flex: 1;
       position: relative;
+      order: 1;
 
       &__photo-famille {
-        transform: translate(6em, 4em);
-        width: 30em;
-        clip-path: path("M93.12,374.37c-30.07-12.41-52.5-38.25-60.68-69.73-6.61-25.42-16.14-56.66-28.25-82.02C-5.94,170.42-5.16,64.48,94.56,34.87,194.27,5.27,195.83-12.65,241.79,10.72s109.84,63.88,155.03,148.02c45.18,84.13,15.58,269.54-98.16,267.21-71.49-1.47-154.07-30.33-205.54-51.57Z");
+        transform: translate(10%, 0);
+        width: 20em;
+        clip-path: circle(10em);
+        position: absolute;
+        top: 10%;
+        right: 15%;
       }
 
       &__fond {
         z-index: -1;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 15%;
+        right: 1%;
+        width: 25em;
       }
     }
   }
@@ -133,6 +141,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 3em;
+    flex-wrap: wrap;
 
     &__materiel {
       color: white;
@@ -143,18 +152,20 @@
     &__financier {
       background-color: $carte-couleur;
       flex: 1;
-        strong {
-          font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
-        }
-      p:first-of-type{
+
+      strong {
+        font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+      }
+
+      p:first-of-type {
         margin-bottom: 1em;
       }
 
-      p:nth-of-type(2){
+      p:nth-of-type(2) {
         margin-bottom: 3em;
       }
 
-      p:nth-of-type(3){
+      p:nth-of-type(3) {
         margin-bottom: .5em;
       }
     }
@@ -168,12 +179,83 @@
         font-size: 2.5em;
         margin-bottom: 1.5em;
       }
-      p{
+
+      p {
         font-family: "Niveau Grotesk light", "Helvetica Neue", sans-serif;
         font-size: $text-size;
         line-height: 1.3em;
         margin-bottom: 2em;
       }
+    }
+  }
+}
+
+
+@media (max-width: 620px) {
+  .histoire{
+    &__contenu{
+      .img-histoire-container{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .img-about-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .histoire {
+    &__contenu {
+      display: initial;
+
+      &__texte {
+        order: 1;
+      }
+
+      .img-histoire-container {
+        height: 25em;
+
+        &__photo-famille {
+          top: -7%;
+          right: 30%;
+        }
+
+        &__fond {
+          top: 0;
+          right: 22%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1150px) {
+  .residences {
+    .maisons-container {
+      flex-direction: column;
+      row-gap: 4em;
+
+      &__maison {
+        div{
+          width: 55%;
+          margin: 0 auto;
+          img{
+            margin-bottom: 1em;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .dons{
+    .cartes-dons{
+      flex-direction: column;
+      row-gap: 3em;
     }
   }
 }

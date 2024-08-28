@@ -16,7 +16,7 @@ $photo_maison_2 = get_field('img-maison-2');
 $picture_maison_2 = $photo_maison_2['sizes']['medium'];
 $alt_maison_2 = $photo_maison_2['alt'];
 
-$photo_histoire = get_field('img-maison-2');
+$photo_histoire = get_field('img-histoire');
 $picture_histoire = $photo_histoire['sizes']['medium'];
 $alt_histoire = $photo_histoire['alt'];
 
@@ -50,9 +50,11 @@ get_header()
         </h1>
         <div class="maisons-container">
             <article class="maisons-container__maison">
-                <img src="<?= $picture_maison_1 ?>"
-                     srcset="<?= $picture_maison_1 ?>, <?= $photo_maison_1['sizes']['large'] ?> 2x"
-                     alt="<?= $alt_maison_1 ?>">
+                <div>
+                    <img src="<?= $picture_maison_1 ?>"
+                         srcset="<?= $picture_maison_1 ?>, <?= $photo_maison_1['sizes']['large'] ?> 2x"
+                         alt="<?= $alt_maison_1 ?>">
+                </div>
                 <h2>
                     Premi&egrave;re maison
                 </h2>
@@ -67,9 +69,11 @@ get_header()
             </article>
             <div class="maisons-container__ligne-verticale"></div>
             <article class="maisons-container__maison">
-                <img src="<?= $picture_maison_2 ?>"
-                     srcset="<?= $picture_maison_2 ?>, <?= $photo_maison_2['sizes']['large'] ?> 2x"
-                     alt="<?= $alt_maison_2 ?>">
+                <div>
+                    <img src="<?= $picture_maison_2 ?>"
+                         srcset="<?= $picture_maison_2 ?>, <?= $photo_maison_2['sizes']['large'] ?> 2x"
+                         alt="<?= $alt_maison_2 ?>">
+                </div>
                 <h2>
                     Deuxi&egrave;me maison
                 </h2>
@@ -89,14 +93,6 @@ get_header()
             Un peu d&lsquo;<span class="mot-orange">Histoire</span>
         </h1>
         <div class="histoire__contenu">
-            <div class="histoire__contenu__texte">
-                <p>
-                    <?= get_field("texte-histoire-1", 50) ?>
-                </p>
-                <p>
-                    <?= get_field("texte-histoire-2", 50) ?>
-                </p>
-            </div>
             <div class="img-histoire-container">
                 <img src="<?= $picture_histoire ?>"
                      srcset="<?= $picture_histoire ?>, <?= $photo_histoire['sizes']['large'] ?> 2x"
@@ -108,6 +104,15 @@ get_header()
                      alt="fond de couleur orange"
                      class="img-histoire-container__fond">
             </div>
+            <div class="histoire__contenu__texte">
+                <p>
+                    <?= get_field("texte-histoire-1", 50) ?>
+                </p>
+                <p>
+                    <?= get_field("texte-histoire-2", 50) ?>
+                </p>
+            </div>
+
         </div>
     </section>
     <section class="dons wrapper" id="dons">

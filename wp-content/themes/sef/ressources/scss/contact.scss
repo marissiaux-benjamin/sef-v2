@@ -59,7 +59,7 @@
       column-gap: 2em;
       position: relative;
 
-      input{
+      input {
         width: 91.6%;
       }
     }
@@ -111,6 +111,18 @@
       .btn-form:hover {
         transform: scale(1.1);
       }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .intro-contact {
+    height: 40vh;
+    margin-bottom: 0;
+    padding-top: 15em;
+
+    .img-contact-container {
+      display: none;
     }
   }
 }
