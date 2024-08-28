@@ -1,4 +1,4 @@
-.intro {
+.intro-actu {
 
   .but-premier {
     font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
@@ -111,6 +111,7 @@
       }
 
       &__fond {
+        z-index: -1;
         position: absolute;
         top: 0;
         right: 0;

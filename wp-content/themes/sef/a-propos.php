@@ -98,15 +98,15 @@ get_header()
                 </p>
             </div>
             <div class="img-histoire-container">
+                <img src="<?= $picture_histoire ?>"
+                     srcset="<?= $picture_histoire ?>, <?= $photo_histoire['sizes']['large'] ?> 2x"
+                     alt="<?= $alt_histoire ?>" class="img-histoire-container__photo-famille">
                 <img src="http://sef-aout.test/wp-content/uploads/2024/08/fond-histoire-2.svg"
                      alt="fond de couleur orange"
                      class="img-histoire-container__fond">
                 <img src="http://sef-aout.test/wp-content/uploads/2024/08/fond-histoire-1.svg"
                      alt="fond de couleur orange"
                      class="img-histoire-container__fond">
-                <img src="<?= $picture_histoire ?>"
-                     srcset="<?= $picture_histoire ?>, <?= $photo_histoire['sizes']['large'] ?> 2x"
-                     alt="<?= $alt_histoire ?>" class="img-histoire-container__photo-famille">
             </div>
         </div>
     </section>
