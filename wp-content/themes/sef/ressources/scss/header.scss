@@ -7,7 +7,7 @@
 
 .header {
   background-color: #102C57;
-  width: 100%;
+  width: 90%;
   height: 6em;
   position: relative;
 
@@ -76,7 +76,6 @@
   }
 
   &__icon {
-    padding-left: 1.5em;
     padding-top: .8em;
     font-family: Helvetica, sans-serif;
     font-weight: bold;
@@ -235,4 +234,10 @@
       }
     }
   }
+}
+
+@media (max-width: 1024px) {
+.header{
+  width: 94%;
+}
 }

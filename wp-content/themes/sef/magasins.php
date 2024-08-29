@@ -188,7 +188,7 @@ get_header()
         <h1>
             Envie de nous <span class="mot-orange">soutenir</span>&nbsp;?
         </h1>
-        <a href="#">Faire un don</a>
+        <a href="http://sef-aout.test/a-propos/#dons">Faire un don</a>
     </section>
 </main>
 

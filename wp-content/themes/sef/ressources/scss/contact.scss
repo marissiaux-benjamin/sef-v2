@@ -125,6 +125,19 @@
       display: none;
     }
   }
+
+  .formulaire{
+    form{
+      .prenom-nom{
+        display: flex;
+        flex-direction: column;
+
+        input{
+          width: 96%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {

@@ -13,7 +13,7 @@
     <title><?= get_the_title() ?></title>
 </head>
 <body>
-<header class="header">
+<header class="header wrapper">
     <h1 class="header__icon">
         <a href="http://sef-aout.test/accueil/">
             SEF

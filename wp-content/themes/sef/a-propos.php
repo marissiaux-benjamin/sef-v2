@@ -44,7 +44,7 @@ get_header()
             </p>
         </div>
     </section>
-    <section class="residences wrapper">
+    <section class="residences wrapper" id="maisons">
         <h1>
             Nos <span class="mot-orange">maisons</span>
         </h1>
@@ -156,7 +156,7 @@ get_header()
         <h1>
             Envie de devenir <span class="mot-orange">b&eacute;n&eacute;vole</span>&nbsp;?
         </h1>
-        <a href="#">Contactez&nbsp;-&nbsp;nous</a>
+        <a href="http://sef-aout.test/contact/">Contactez&nbsp;-&nbsp;nous</a>
     </section>
 </main>
 
