@@ -178,13 +178,21 @@ get_header()
                         <li>
                             Dimanche : <span class="gras">Fermé</span>
                         </li>
-
                     </ul>
                 </div>
             </article>
+            <div class="map-container">
+                    <a href="https://earth.google.com/web/@50.52255767,5.23723294,72.14596466a,2791.09101589d,30y,0h,0t,0r/data=MigKJgokCiAxZXFMRUdKekRyX0NhVEdCb3hUMzJDSnZKWnB0dUNEayACOgMKATA"
+                       target="_blank"
+                       title="Aller voir les emplacements dans Google Earth">
+                        Aller voir sur Google Earth
+                    </a>
+                <img src="http://sef-aout.test/wp-content/uploads/2024/08/commerces-sef@72x-100.jpg"
+                     alt="screenshot des emplacement des 3 commerces du sef" class="map-container__img">
+            </div>
         </div>
     </section>
-    <section class="benevolat wrapper">
+    <section class="benevolat wrapper" id="after-map">
         <h1>
             Envie de nous <span class="mot-orange">soutenir</span>&nbsp;?
         </h1>

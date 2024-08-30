@@ -35,6 +35,10 @@
       width: 100%;
     }
 
+    img:last-of-type {
+      border-radius: 1em;
+    }
+
     &__carte {
       border-radius: 1.5em;
       background-color: $carte-couleur;
@@ -97,6 +101,50 @@
       }
     }
   }
+}
+
+.map-container {
+  position: relative;
+  display: block;
+
+
+  a {
+    padding-top: 27%;
+    padding-bottom: 27%;
+    z-index: 999999;
+    transition: .4s ease-in-out;
+    display: block;
+    text-align: center;
+    font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    color: white;
+    opacity: 0;
+  }
+
+  img {
+    transition: .3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      filter: brightness(30%);
+    }
+
+    a {
+      opacity: 1;
+    }
+
+  }
+
+}
+
+
+#after-map {
+  margin-top: 5em;
 }
 
 @media (max-width: 1280px) {
