@@ -13,7 +13,7 @@ get_header();
 ?>
 
 <main>
-    <section class="intro wrapper">
+    <section class="intro wrapper show">
         <div>
             <h1>Service d'<span class="mot-orange">Entraide</span> Familiale</h1>
             <p>
@@ -34,7 +34,7 @@ get_header();
         </div>
 
     </section>
-    <section class="services wrapper">
+    <section class="services wrapper show">
         <h1>Nos <span class="mot-orange">Services</span></h1>
         <div class="services__flex">
             <div class="img-service">
@@ -137,5 +137,6 @@ get_header();
         <a href="http://sef-aout.test/contact/">Contactez&nbsp;-&nbsp;nous</a>
     </section>
 </main>
+<script src="ressources/js/main.js"></script>
 
 <?php get_footer() ?>

@@ -163,6 +163,16 @@
       display: none;
     }
   }
+
+  .map-container {
+    a {
+      opacity: initial;
+    }
+
+    &__img {
+      filter: brightness(30%);
+    }
+  }
 }
 
 @media (max-width: 885px) {
