@@ -35,10 +35,6 @@
       width: 100%;
     }
 
-    img:last-of-type {
-      border-radius: 1em;
-    }
-
     &__carte {
       border-radius: 1.5em;
       background-color: $carte-couleur;
@@ -107,7 +103,6 @@
   position: relative;
   display: block;
 
-
   a {
     padding-top: 27%;
     padding-bottom: 27%;
@@ -127,6 +122,7 @@
 
   img {
     transition: .3s ease-in-out;
+    border-radius: 1.5em;
   }
 
   &:hover {

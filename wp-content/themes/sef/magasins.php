@@ -26,7 +26,7 @@ get_header()
 
 <main>
     <section class="intro wrapper">
-        <div class="img-magasins-container">
+        <div class="img-magasins-container" data-animation="show3">
             <img src="<?= $picture_magasins ?>"
                  srcset="<?= $picture_magasins ?>, <?= $photo_intro_magasins['sizes']['large'] ?> 2x"
                  alt="<?= $alt_magasins ?>" class="img-magasins-container__contenu">
@@ -36,20 +36,20 @@ get_header()
                  class="img-magasins-container__fond">
         </div>
         <div>
-            <h1>
+            <h1 data-animation="show">
                 Différents <span class="mot-orange">magasins</span>
             </h1>
-            <p>
+            <p data-animation="show2">
                 <?= get_field('intro-magasins-p', 176) ?>
             </p>
         </div>
     </section>
     <section class="magasins wrapper" id="magasins">
-        <h1>
+        <h1 data-animation="show">
             Nos <span class="mot-orange">commerces</span>
         </h1>
         <div class="magasins__cartes-container">
-            <article class="magasins__cartes-container__carte">
+            <article class="magasins__cartes-container__carte" data-animation="show">
                 <img src="<?= $picture_1_magasins ?>"
                      srcset="<?= $picture_1_magasins ?>, <?= $photo_1_magasins['sizes']['large'] ?> 2x"
                      alt="<?= $alt_1_magasins ?>">
@@ -94,7 +94,7 @@ get_header()
                     </ul>
                 </div>
             </article>
-            <article class="magasins__cartes-container__carte">
+            <article class="magasins__cartes-container__carte" data-animation="show2">
                 <img src="<?= $picture_2_magasins ?>"
                      srcset="<?= $picture_2_magasins ?>, <?= $photo_2_magasins['sizes']['large'] ?> 2x"
                      alt="<?= $alt_2_magasins ?>">
@@ -139,7 +139,7 @@ get_header()
                 </div>
 
             </article>
-            <article class="magasins__cartes-container__carte">
+            <article class="magasins__cartes-container__carte" data-animation="show3">
                 <img src="<?= $picture_3_magasins ?>"
                      srcset="<?= $picture_3_magasins ?>, <?= $photo_3_magasins['sizes']['large'] ?> 2x"
                      alt="<?= $alt_3_magasins ?>">
@@ -181,7 +181,7 @@ get_header()
                     </ul>
                 </div>
             </article>
-            <div class="map-container">
+            <div class="map-container" data-animation="show">
                     <a href="https://earth.google.com/web/@50.52255767,5.23723294,72.14596466a,2791.09101589d,30y,0h,0t,0r/data=MigKJgokCiAxZXFMRUdKekRyX0NhVEdCb3hUMzJDSnZKWnB0dUNEayACOgMKATA"
                        target="_blank"
                        title="Aller voir les emplacements dans Google Earth">
@@ -193,10 +193,10 @@ get_header()
         </div>
     </section>
     <section class="benevolat wrapper" id="after-map">
-        <h1>
+        <h1 data-animation="show">
             Envie de nous <span class="mot-orange">soutenir</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/a-propos/#dons">Faire un don</a>
+        <a href="http://sef-aout.test/a-propos/#dons" data-animation="show2">Faire un don</a>
     </section>
 </main>
 

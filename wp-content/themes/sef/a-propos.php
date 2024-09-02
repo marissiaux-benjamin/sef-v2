@@ -25,7 +25,7 @@ get_header()
 
 <main>
     <section class="intro wrapper">
-        <div class="img-about-container">
+        <div class="img-about-container" data-animation="show4">
             <img src="<?= $picture_a_propos ?>"
                  srcset="<?= $picture_a_propos ?>, <?= $photo_a_propos['sizes']['large'] ?> 2x"
                  alt="<?= $alt_a_propos ?>" class="img-about-container__contenu-about">
@@ -35,53 +35,53 @@ get_header()
                  class="img-about-container__fond">
         </div>
         <div>
-            <h1>Le <span class="mot-orange">but</span> du SEF</h1>
-            <p class="but-premier">
+            <h1 data-animation="show">Le <span class="mot-orange">but</span> du SEF</h1>
+            <p class="but-premier" data-animation="show2">
                 <?= get_field("intro-p-1", 50) ?>
             </p>
-            <p>
+            <p data-animation="show3">
                 <?= get_field("intro-p-2", 50) ?>
             </p>
         </div>
     </section>
     <section class="residences wrapper" id="maisons">
-        <h1>
+        <h1 data-animation="show">
             Nos <span class="mot-orange">maisons</span>
         </h1>
         <div class="maisons-container">
             <article class="maisons-container__maison">
-                <div>
+                <div data-animation="show">
                     <img src="<?= $picture_maison_1 ?>"
                          srcset="<?= $picture_maison_1 ?>, <?= $photo_maison_1['sizes']['large'] ?> 2x"
                          alt="<?= $alt_maison_1 ?>">
                 </div>
-                <h2>
+                <h2 data-animation="show2">
                     Premi&egrave;re maison
                 </h2>
                 <ul>
-                    <li>
+                    <li data-animation="show3">
                         <?= get_field("maison-li-1", 50) ?>
                     </li>
-                    <li>
+                    <li data-animation="show4">
                         <?= get_field("maison-li-2", 50) ?>
                     </li>
                 </ul>
             </article>
             <div class="maisons-container__ligne-verticale"></div>
             <article class="maisons-container__maison">
-                <div>
+                <div data-animation="show">
                     <img src="<?= $picture_maison_2 ?>"
                          srcset="<?= $picture_maison_2 ?>, <?= $photo_maison_2['sizes']['large'] ?> 2x"
                          alt="<?= $alt_maison_2 ?>">
                 </div>
-                <h2>
+                <h2 data-animation="show2">
                     Deuxi&egrave;me maison
                 </h2>
                 <ul>
-                    <li>
+                    <li data-animation="show3">
                         <?= get_field("maison-li-1-ul2", 50) ?>
                     </li>
-                    <li>
+                    <li data-animation="show4">
                         <?= get_field("maison-li-2-ul2", 50) ?>
                     </li>
                 </ul>
@@ -89,11 +89,11 @@ get_header()
         </div>
     </section>
     <section class="histoire wrapper">
-        <h1>
+        <h1 data-animation="show">
             Un peu d&lsquo;<span class="mot-orange">Histoire</span>
         </h1>
         <div class="histoire__contenu">
-            <div class="img-histoire-container">
+            <div class="img-histoire-container" data-animation="show4">
                 <img src="<?= $picture_histoire ?>"
                      srcset="<?= $picture_histoire ?>, <?= $photo_histoire['sizes']['large'] ?> 2x"
                      alt="<?= $alt_histoire ?>" class="img-histoire-container__photo-famille">
@@ -105,10 +105,10 @@ get_header()
                      class="img-histoire-container__fond">
             </div>
             <div class="histoire__contenu__texte">
-                <p>
+                <p data-animation="show2">
                     <?= get_field("texte-histoire-1", 50) ?>
                 </p>
-                <p>
+                <p data-animation="show3">
                     <?= get_field("texte-histoire-2", 50) ?>
                 </p>
             </div>
@@ -116,11 +116,11 @@ get_header()
         </div>
     </section>
     <section class="dons wrapper" id="dons">
-        <h1>
+        <h1 data-animation="show">
             A propos des <span class="mot-orange">dons</span>
         </h1>
         <div class="cartes-dons">
-            <article class="cartes-dons__materiel">
+            <article class="cartes-dons__materiel" data-animation="show2">
                 <h2>
                     Dons matériels
                 </h2>
@@ -132,7 +132,7 @@ get_header()
                 </p>
                 <a href="http://sef-aout.test/magasins/#magasins" class="btn-orange">Voir les magasins</a>
             </article>
-            <article class="cartes-dons__financier">
+            <article class="cartes-dons__financier" data-animation="show3">
                 <h2>
                     Dons financiers
                 </h2>
@@ -153,10 +153,10 @@ get_header()
         </div>
     </section>
     <section class="benevolat wrapper">
-        <h1>
+        <h1 data-animation="show">
             Envie de devenir <span class="mot-orange">b&eacute;n&eacute;vole</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/contact/">Contactez&nbsp;-&nbsp;nous</a>
+        <a href="http://sef-aout.test/contact/" data-animation="show2">Contactez&nbsp;-&nbsp;nous</a>
     </section>
 </main>
 

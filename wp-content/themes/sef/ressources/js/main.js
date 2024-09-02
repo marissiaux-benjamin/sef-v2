@@ -6,7 +6,7 @@ const observers = {
             element.classList.add('hidden');
         });
 
-        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.1});
+        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.2});
         this.observeAction();
     },
 
@@ -36,7 +36,7 @@ const observers2 = {
             element.classList.add('hidden');
         });
 
-        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.1});
+        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.2});
         this.observeAction();
     },
 
@@ -65,7 +65,7 @@ const observers3 = {
             element.classList.add('hidden');
         });
 
-        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.1});
+        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.2});
         this.observeAction();
     },
 
@@ -86,3 +86,62 @@ const observers3 = {
 };
 
 observers3.init();
+
+
+const observers4 = {
+    showElements: document.querySelectorAll('[data-animation="slide"]'),
+
+    init() {
+        this.showElements.forEach((element) => {
+            element.classList.add('hidden2');
+        });
+
+        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.2});
+        this.observeAction();
+    },
+
+    showAdd(entries) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('slide-left');
+                entry.target.classList.remove('hidden2');
+            }
+        });
+    },
+
+    observeAction() {
+        this.showElements.forEach((element) => {
+            this.observersIntersection.observe(element);
+        });
+    },
+};
+observers4.init();
+
+const observers5 = {
+    showElements: document.querySelectorAll('[data-animation="show4"]'),
+
+    init() {
+        this.showElements.forEach((element) => {
+            element.classList.add('hidden');
+        });
+
+        this.observersIntersection = new IntersectionObserver(this.showAdd.bind(this), {threshold: 0.2});
+        this.observeAction();
+    },
+
+    showAdd(entries) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-4');
+                entry.target.classList.remove('hidden');
+            }
+        });
+    },
+
+    observeAction() {
+        this.showElements.forEach((element) => {
+            this.observersIntersection.observe(element);
+        });
+    },
+};
+observers5.init();

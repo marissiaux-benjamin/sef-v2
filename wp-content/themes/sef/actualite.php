@@ -26,13 +26,13 @@ get_header()
     <main>
         <section class="intro-actu wrapper">
             <div>
-                <h1>Quoi de <span class="mot-orange">neuf</span> au SEF&nbsp;?</h1>
-                <p>
+                <h1 data-animation="show">Quoi de <span class="mot-orange">neuf</span> au SEF&nbsp;?</h1>
+                <p data-animation="show2">
                     <?= get_field("intro-actu", 90) ?>
                 </p>
             </div>
 
-            <div class="img-actu-container">
+            <div class="img-actu-container" data-animation="show3">
                 <img src="<?= $picture_actu ?>"
                      srcset="<?= $picture_actu ?>, <?= $photo_intro_actu['sizes']['large'] ?> 2x"
                      alt="<?= $alt_actu ?>" class="img-actu-container__contenu-actu">
@@ -45,16 +45,16 @@ get_header()
             </div>
         </section>
         <section class="actu-container wrapper">
-            <h1>
+            <h1 data-animation="show">
                 <span class="mot-orange">Activités</span> de l&lsquo;année
             </h1>
-            <div class="actu-container__activites">
+            <div class="actu-container__activites" data-animation="show">
                 <div>
                     <img src="<?= $picture_activite ?>"
                          srcset="<?= $picture_activite ?>, <?= $photo_activite['sizes']['large'] ?> 2x"
                          alt="<?= $alt_activite ?>" class="actu-container__activites__img">
                 </div>
-                <article class="actu-container__activites__texte">
+                <article class="actu-container__activites__texte" data-animation="show2">
                     <h2>
                         <?= get_field('titre-activite-1', 90); ?>
                     </h2>
@@ -63,7 +63,7 @@ get_header()
                     </p>
                 </article>
             </div>
-            <div class="actu-container__activites">
+            <div class="actu-container__activites" data-animation="show2">
                 <article class="actu-container__activites__texte">
                     <h2>
                         <?= get_field('titre-activite-2', 90); ?>
@@ -72,7 +72,7 @@ get_header()
                         <?= get_field("texte-activite-2", 90) ?>
                     </p>
                 </article>
-                <div>
+                <div data-animation="show3">
                     <img src="<?= $picture_activite_2 ?>"
                          srcset="<?= $picture_activite_2 ?>, <?= $photo_activite_2['sizes']['large'] ?> 2x"
                          alt="<?= $alt_activite_2 ?>" class="actu-container__activites__img">
@@ -80,13 +80,13 @@ get_header()
 
             </div>
             <div class="actu-container__activites">
-                <div>
+                <div data-animation="show3">
                     <img src="<?= $picture_activite_3 ?>"
                          srcset="<?= $picture_activite_3 ?>, <?= $photo_activite_3['sizes']['large'] ?> 2x"
                          alt="<?= $alt_activite_3 ?>" class="actu-container__activites__img">
                 </div>
 
-                <article class="actu-container__activites__texte">
+                <article class="actu-container__activites__texte" data-animation="show4">
                     <h2>
                         <?= get_field('titre-activite-3', 90); ?>
                     </h2>
@@ -97,10 +97,10 @@ get_header()
             </div>
         </section>
         <section class="benevolat wrapper">
-            <h1>
+            <h1 data-animation="show">
                 Envie de devenir <span class="mot-orange">b&eacute;n&eacute;vole</span>&nbsp;?
             </h1>
-            <a href="http://sef-aout.test/contact/">Contactez&nbsp;-&nbsp;nous</a>
+            <a href="http://sef-aout.test/contact/" data-animation="show3">Contactez&nbsp;-&nbsp;nous</a>
         </section>
     </main>
 
