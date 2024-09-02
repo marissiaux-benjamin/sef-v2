@@ -154,9 +154,9 @@ get_header()
     </section>
     <section class="benevolat wrapper">
         <h1 data-animation="show">
-            Envie de devenir <span class="mot-orange">b&eacute;n&eacute;vole</span>&nbsp;?
+            Envie de voir la galerie <span class="mot-orange">photo</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/contact/" data-animation="show2">Contactez&nbsp;-&nbsp;nous</a>
+        <a href="http://sef-aout.test/galerie/" data-animation="show2">Aller à la galerie</a>
     </section>
 </main>
 

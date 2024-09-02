@@ -41,7 +41,7 @@
                        title="Aller sur la page à propos au niveau des dons financiers">Dons financiers</a>
                 </li>
                 <li>
-                    <a href="#" title="Aller sur la page contact du SEF">Devenir bénévole</a>
+                    <a href="http://sef-aout.test/contact/" title="Aller sur la page contact du SEF">Devenir bénévole</a>
                 </li>
             </ul>
         </section>
@@ -83,7 +83,7 @@
             © 2024 SEF. Tous droits réservés.
         </p>
         <p>
-            <a href="#">Mentions l&eacute;gales</a>
+            <a href="http://sef-aout.test/mentions-legales/">Mentions l&eacute;gales</a>
         </p>
     </div>
 </footer>
