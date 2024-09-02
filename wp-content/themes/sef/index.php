@@ -13,7 +13,7 @@ get_header();
 ?>
 
 <main>
-    <section class="intro wrapper">
+    <section class="intro wrapper" data-animation="show">
         <div>
             <h1>Service d'<span class="mot-orange">Entraide</span> Familiale</h1>
             <p>
