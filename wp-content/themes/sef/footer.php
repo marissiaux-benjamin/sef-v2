@@ -33,15 +33,15 @@
             </h1>
             <ul>
                 <li>
-                    <a href="http://sef-aout.test/a-propos/#dons"
+                    <a href="<?= get_permalink(50) ?>#dons"
                        title="Aller sur la page à propos au niveau des don matériels">Dons matériels</a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/a-propos/#dons"
+                    <a href="<?= get_permalink(50) ?>/#dons"
                        title="Aller sur la page à propos au niveau des dons financiers">Dons financiers</a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/contact/" title="Aller sur la page contact du SEF">Devenir bénévole</a>
+                    <a href="<?= get_permalink(213) ?>" title="Aller sur la page contact du SEF">Devenir bénévole</a>
                 </li>
             </ul>
         </section>
@@ -51,27 +51,27 @@
             </h1>
             <ul>
                 <li>
-                    <a href="http://sef-aout.test/accueil/" title="Aller sur la page d'accueil">
+                    <a href="<?= get_permalink(12) ?>" title="Aller sur la page d'accueil">
                         Accueil
                     </a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/actualite/" title="Aller sur la page des actualités">
+                    <a href="<?= get_permalink(90) ?>" title="Aller sur la page des actualités">
                         Actualit&eacute;
                     </a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/a propos/" title="Aller sur la page a propos">
+                    <a href="<?= get_permalink(50) ?>" title="Aller sur la page a propos">
                         A propos
                     </a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/magasins/" title="Aller sur la page des magasins">
+                    <a href="<?= get_permalink(176) ?>" title="Aller sur la page des magasins">
                         Magasins
                     </a>
                 </li>
                 <li>
-                    <a href="http://sef-aout.test/contact/" title="Aller sur la page contact">
+                    <a href="<?= get_permalink(213) ?>" title="Aller sur la page contact">
                         Contact
                     </a>
                 </li>
@@ -83,7 +83,7 @@
             © 2024 SEF. Tous droits réservés.
         </p>
         <p>
-            <a href="http://sef-aout.test/mentions-legales/">Mentions l&eacute;gales</a>
+            <a href="<?= get_permalink(237) ?>">Mentions l&eacute;gales</a>
         </p>
     </div>
 </footer>

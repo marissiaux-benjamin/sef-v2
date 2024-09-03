@@ -130,7 +130,7 @@ get_header()
                 <p>
                     <?= get_field('text-materiel-2', 50) ?>
                 </p>
-                <a href="http://sef-aout.test/magasins/#magasins" class="btn-orange">Voir les magasins</a>
+                <a href="<?= get_permalink(176) ?>#magasins" class="btn-orange">Voir les magasins</a>
             </article>
             <article class="cartes-dons__financier" data-animation="show3">
                 <h2>
@@ -156,7 +156,7 @@ get_header()
         <h1 data-animation="show">
             Envie de voir la galerie <span class="mot-orange">photo</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/galerie/" data-animation="show2">Aller à la galerie</a>
+        <a href="<?= get_permalink(275) ?>" data-animation="show2">Aller à la galerie</a>
     </section>
 </main>
 

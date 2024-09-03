@@ -19,8 +19,8 @@ get_header();
             <p data-animation="show2">
                 <?= get_field("intro", 12) ?>
             </p>
-            <a href="http://sef-aout.test/actualites/" class="btn-bleu" data-animation="show3">Nous d&eacute;couvrir</a>
-            <a href="http://sef-aout.test/contact/" class="btn-orange" data-animation="show3">Contacter</a>
+            <a href="<?= get_permalink(90) ?>" class="btn-bleu" data-animation="show3">Nous d&eacute;couvrir</a>
+            <a href="<?= get_permalink(213) ?>" class="btn-orange" data-animation="show3">Contacter</a>
 
         </div>
 
@@ -55,7 +55,8 @@ get_header();
                     <p>
                         <?= get_field("texte-service-1", 12) ?>
                     </p>
-                    <a href="<?= get_field("lien-service-1", 12) ?>#maisons" title="Aller sur la page a propos">En savoir plus
+                    <a href="<?= get_permalink(50) ?>#maisons" title="Aller sur la page a propos">En
+                        savoir plus
                         sur les maisons</a>
                 </article>
                 <article class="text-container__services__text" data-animation="show2">
@@ -65,7 +66,8 @@ get_header();
                     <p>
                         <?= get_field("texte-service-2", 12) ?>
                     </p>
-                    <a href="<?= get_field("lien-service-2",12)?>#magasins" title="Aller sur la page des magasins">Où sont les magasins ?</a>
+                    <a href="<?= get_permalink(176) ?>#magasins" title="Aller sur la page des magasins">Où
+                        sont les magasins ?</a>
                 </article>
             </div>
         </div>
@@ -126,7 +128,7 @@ get_header();
                 <h2>
                     Soutenez&nbsp;-&nbsp;nous d&lsquo;une autre mani&egrave;re
                 </h2>
-                <a href="http://sef-aout.test/a-propos/#dons" class="btn-orange">Faire un don</a>
+                <a href="<?= get_permalink(50) ?>/#dons" class="btn-orange">Faire un don</a>
             </aside>
         </div>
     </section>
@@ -134,7 +136,7 @@ get_header();
         <h1 data-animation="show">
             Envie de devenir <span class="mot-orange">b&eacute;n&eacute;vole</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/contact/" data-animation="show">Contactez&nbsp;-&nbsp;nous</a>
+        <a href="<?= get_permalink(213) ?>" data-animation="show">Contactez&nbsp;-&nbsp;nous</a>
     </section>
 </main>
 

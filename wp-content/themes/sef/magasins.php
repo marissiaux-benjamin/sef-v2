@@ -196,7 +196,7 @@ get_header()
         <h1 data-animation="show">
             Envie de nous <span class="mot-orange">soutenir</span>&nbsp;?
         </h1>
-        <a href="http://sef-aout.test/a-propos/#dons" data-animation="show2">Faire un don</a>
+        <a href="<?= get_permalink(50) ?>#dons" data-animation="show2">Faire un don</a>
     </section>
 </main>
 

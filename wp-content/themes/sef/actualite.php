@@ -100,7 +100,7 @@ get_header()
             <h1 data-animation="show">
                 Envie de voir les actus en <span class="mot-orange">photos</span>&nbsp;?
             </h1>
-            <a href="http://sef-aout.test/galerie/" data-animation="show3">Aller voir la galerie</a>
+            <a href="<?= get_permalink(275) ?>" data-animation="show3">Aller voir la galerie</a>
         </section>
     </main>
 

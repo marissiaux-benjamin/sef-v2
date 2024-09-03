@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Niveau Grotesk light";
+    src: url("../fonts/NiveauGroteskLight.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Niveau Grotesk medium";
+    src: url("../fonts/NiveauGroteskMedium.otf") format("OpenType");
+}
+
+@font-face {
+    font-family: "Niveau Grotesk regular";
+    src: url("../fonts/NiveauGroteskRegular.otf") format("OpenType");
+}

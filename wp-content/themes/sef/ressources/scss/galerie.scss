@@ -1,0 +1,49 @@
+.intro-galerie {
+  padding-top: 10em;
+
+  h1 {
+    font-family: "Niveau Grotesk medium", "Helvetica Neue", sans-serif;
+    font-size: $titre-de-page;
+    margin-bottom: 1.5em;
+  }
+}
+
+.galerie {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 3em;
+  row-gap: 3em;
+  margin-bottom: 3em;
+
+  div {
+    width: 30%;
+
+    img {
+      border-radius: 1em;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1021px) {
+  .galerie{
+    div{
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .intro-galerie{
+    h1{
+      font-size: 4.5em;
+    }
+  }
+
+  .galerie{
+    div{
+      width: 100%;
+    }
+  }
+}

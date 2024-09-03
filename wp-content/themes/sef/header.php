@@ -15,7 +15,7 @@
 <body>
 <header class="header wrapper">
     <h1 class="header__icon">
-        <a href="http://sef-aout.test/accueil/">
+        <a href="<?= get_permalink(12) ?>">
             SEF
         </a>
     </h1>
@@ -28,37 +28,37 @@
         <div class="mobile-menu__container">
             <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/accueil/" title="Aller vers la page d'accueil"
+                    <a href="<?= get_permalink(12) ?>" title="Aller vers la page d'accueil"
                        class="mobile-menu__link">
                         Accueil
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/actualites/" title="Aller vers la page a propos"
+                    <a href="<?= get_permalink(90) ?>" title="Aller vers la page a propos"
                        class="mobile-menu__link">
                         Actualités
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/a-propos/" title="Aller vers la page projets"
+                    <a href="<?= get_permalink(50) ?>" title="Aller vers la page projets"
                        class="mobile-menu__link">
                         A propos
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/magasins/" title="Aller vers la page contact"
+                    <a href="<?= get_permalink(176) ?>" title="Aller vers la page contact"
                        class="mobile-menu__link">
                         Magasins
                     </a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="http://sef-aout.test/2024/08/25/contact/" title="Aller vers la page contact"
+                    <a href="<?= get_permalink(213) ?>" title="Aller vers la page contact"
                        class="mobile-menu__link">
                         Contact
                     </a>
                 </li>
             </ul>
-            <a href="http://sef-aout.test/a-propos/#dons" title="Aller vers la page contact"
+            <a href="<?= get_permalink(50) ?>#dons" title="Aller vers la page contact"
                class="mobile-menu__link nav-btn">
                 Donation
             </a>
