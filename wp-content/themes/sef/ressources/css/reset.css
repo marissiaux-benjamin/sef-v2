@@ -48,22 +48,3 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
-@font-face {
-    font-family: "Niveau Grotesk light";
-    src: url("../fonts/NiveauGroteskLight.otf") format("OpenType");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "Niveau Grotesk medium";
-    src: url("../fonts/NiveauGroteskMedium.otf") format("OpenType");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Niveau Grotesk regular";
-    src: url("../fonts/NiveauGroteskRegular.otf") format("OpenType");
-    font-weight: bold;
-}

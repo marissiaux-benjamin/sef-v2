@@ -8,6 +8,7 @@
     <meta name="keywords"
           content="web design, Benjamin, Benjamin Marissiaux, Marissiaux, porfolio, portfolio Benjamin Marissiaux">
     <link rel="stylesheet" href="<?= dw_asset('css/reset.css'); ?>">
+    <link rel="stylesheet" href="<?= dw_asset('css/fonts.css'); ?>">
     <link rel="stylesheet" href="https://use.typekit.net/utx4tkg.css">
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
     <title><?= get_the_title() ?></title>
